@@ -16,7 +16,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <com.kids_learning_fun_learning.utility.TypeWriterTextView
+    <TextView
         android:id="@+id/type_writer_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -9,14 +9,15 @@ import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.kids_learning_fun_learning.utility.TypeWriterTextView;
 
 public class LearningScreen extends AppCompatActivity {
 
     TextView alphabet_txt;
     ImageView name_image;
-    TypeWriterTextView typeWriterTextView;
-    Animation zoomout;
+    TextView typeWriterTextView;
+    Animation zoomout,slide_down_animation;
     String[] alphabet_arr;
     String[] name_arr;
     int[] image_arr;
@@ -33,10 +34,10 @@ public class LearningScreen extends AppCompatActivity {
         alphabet_arr=getResources().getStringArray(R.array.alphabet_arr);
         name_arr=getResources().getStringArray(R.array.name_arr);
         zoomout=AnimationUtils.loadAnimation(this, R.anim.zoom_out);
-        typeWriterTextView= (TypeWriterTextView) findViewById(R.id.type_writer_text);
-        typeWriterTextView.setText("");
-        typeWriterTextView.setCharacterDelay(500);
-        typeWriterTextView.displayTextWithAnimation("APPLE");
+        slide_down_animation=AnimationUtils.loadAnimation(this, R.anim.slide_down);
+        typeWriterTextView= (TextView) findViewById(R.id.type_writer_text);
+
+        typeWriterTextView.setText("APPLE");
 
         image_arr=new int[]{R.drawable.apple_icon,R.drawable.ball_icon,
                             R.drawable.cat_icon,R.drawable.dog_icon,
@@ -64,12 +65,15 @@ public class LearningScreen extends AppCompatActivity {
         zoomout=AnimationUtils.loadAnimation(this, R.anim.zoom_out);
         alphabet_txt.setAnimation(zoomout);
         name_image.setImageResource(image_arr[count]);
+//        Glide.with(this).load(image_arr[count]).into(name_image);
         zoomout=null;
         zoomout=AnimationUtils.loadAnimation(this, R.anim.zoom_out);
         name_image.setAnimation(zoomout);
-        typeWriterTextView.setText("");
-        typeWriterTextView.setCharacterDelay(1000);
-        typeWriterTextView.displayTextWithAnimation(name_arr[count]);
+
+        slide_down_animation=null;
+        slide_down_animation=AnimationUtils.loadAnimation(this, R.anim.slide_down);
+        typeWriterTextView.setText(name_arr[count]);
+        typeWriterTextView.setAnimation(slide_down_animation);
 
     }
 
@@ -83,11 +87,13 @@ public class LearningScreen extends AppCompatActivity {
         zoomout=AnimationUtils.loadAnimation(this, R.anim.zoom_out);
         alphabet_txt.setAnimation(zoomout);
         name_image.setImageResource(image_arr[count]);
+//        Glide.with(this).load(image_arr[count]).into(name_image);
         zoomout=null;
         zoomout=AnimationUtils.loadAnimation(this, R.anim.zoom_out);
         name_image.setAnimation(zoomout);
-        typeWriterTextView.setText("");
-        typeWriterTextView.setCharacterDelay(1000);
-        typeWriterTextView.displayTextWithAnimation(name_arr[count]);
+        slide_down_animation=null;
+        slide_down_animation=AnimationUtils.loadAnimation(this, R.anim.slide_down);
+        typeWriterTextView.setText(name_arr[count]);
+        typeWriterTextView.setAnimation(slide_down_animation);
     }
 }
