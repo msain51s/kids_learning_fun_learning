@@ -57,5 +57,143 @@
         <item>ZEBRA</item>
     </string-array>
 
+  <!--NUMBERS ARRAY-->
+
+    <string-array name="numbers_string_arr">
+        <item>ONE</item>
+        <item>TWO</item>
+        <item>THREE</item>
+        <item>FOUR</item>
+        <item>FIVE</item>
+        <item>SIX</item>
+        <item>SEVEN</item>
+        <item>EIGHT</item>
+        <item>NINE</item>
+        <item>TEN</item>
+        <item>ELEVEN</item>
+        <item>TWELVE</item>
+        <item>THIRTEEN</item>
+        <item>FOURTEEN</item>
+        <item>FIFTEEN</item>
+        <item>SIXTEEN</item>
+        <item>SEVENTEEN</item>
+        <item>EIGHTEEN</item>
+        <item>NINTEEN</item>
+        <item>TWENTY</item>
+    </string-array>
+
+    <integer-array name="numbers_int_arr">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </integer-array>
+
+    <!--SHAPES NAME ARRAY-->
+<string-array name="shape_name_arr">
+    <item>CIRCLE</item>
+    <item>TRIANGLE</item>
+    <item>RECTANGLE</item>
+    <item>SQUARE</item>
+    <item>PENTAGON</item>
+    <item>HEXAGON</item>
+    <item>STAR</item>
+    <item>HEART</item>
+    <item>CUBE</item>
+</string-array>
+
+    <!--COLOR NAME ARRAY-->
+
+    <string-array name="color_name_arr">
+        <item>RED</item>
+        <item>GREEN</item>
+        <item>BLUE</item>
+        <item>YELLOW</item>
+        <item>WHITE</item>
+        <item>BLACK</item>
+        <item>PINK</item>
+        <item>ORANGE</item>
+        <item>PURPLE</item>
+        <item>MAGENTA</item>
+    </string-array>
+
+    <!--ANIMALS NAME ARRAY-->
+
+    <string-array name="animal_name_arr">
+        <item>BEAR</item>
+        <item>BUFFALO</item>
+        <item>BUTTER FLY</item>
+        <item>CAMEL</item>
+        <item>CAT</item>
+        <item>CHAMELEON</item>
+        <item>CHIMPANZEE</item>
+        <item>COW</item>
+        <item>CRAB</item>
+        <item>CROCODILE</item>
+        <item>DEER</item>
+        <item>DOG</item>
+        <item>DONKEY</item>
+        <item>ELEPHANT</item>
+        <item>FOX</item>
+        <item>FROG</item>
+        <item>GOAT</item>
+        <item>GORILLA</item>
+        <item>HIPPOPOTAMUS</item>
+        <item>HORSE</item>
+        <item>JACKAL</item>
+        <item>LION</item>
+        <item>LIZARD</item>
+        <item>MONGOOSE</item>
+        <item>MONKEY</item>
+        <item>MOSQUITO</item>
+        <item>MOUSE</item>
+        <item>OX</item>
+        <item>PIG</item>
+        <item>POLAR BEAR</item>
+        <item>RABBIT</item>
+        <item>RHINOCEROS</item>
+        <item>SHEEP</item>
+        <item>SNAIL</item>
+        <item>SNAKE</item>
+        <item>SPIDER</item>
+        <item>SQUIRREL</item>
+        <item>TIGER</item>
+        <item>TURTLE</item>
+        <item>WOLF</item>
+        <item>GIRAFFE</item>
+        <item>ZEBRA</item>
+    </string-array>
+
+    <string-array name="fruits_name_arr">
+        <item>APPLE</item>
+        <item>BANANA</item>
+        <item>BLUEBERRY</item>
+        <item>CHERRY</item>
+        <item>GRAPE</item>
+        <item>LEMON</item>
+        <item>MANGO</item>
+        <item>ORANGE</item>
+        <item>PEAR</item>
+        <item>PEACH</item>
+        <item>PAPAYA</item>
+        <item>PINEAPPLE</item>
+        <item>STRAWBERRY</item>
+    </string-array>
 
 </resources>

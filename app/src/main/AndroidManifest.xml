@@ -3,19 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.kids_learning_fun_learning">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".LearningScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -24,6 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NumberScreen" />
+        <activity android:name=".ShapeScreen" />
+        <activity android:name=".ColorScreen" />
+        <activity android:name=".AnimalScreen" />
+        <activity android:name=".FruitScreen"></activity>
     </application>
 
 </manifest>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kids_learning_fun_learning.LearningScreen"
-    android:background="@drawable/gradient_bg">
+    android:background="@drawable/nuber_screen_bg"
+    tools:context="com.kids_learning_fun_learning.NumberScreen">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -28,11 +28,11 @@
     </android.support.v7.widget.Toolbar>
 
     <TextView
-        android:id="@+id/type_writer_text"
+        android:id="@+id/number_spelling_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="APPLE"
+        android:text="ONE"
         android:textStyle="italic"
         android:textSize="45sp"
         android:textColor="#ffffff"
@@ -40,48 +40,39 @@
         android:layout_below="@+id/my_toolbar"/>
 
     <RelativeLayout
-        android:id="@+id/alphabet_text_layout"
+        android:id="@+id/number_text_layout"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/bubble_icon"
         android:layout_centerInParent="true">
 
-    <TextView
-        android:id="@+id/alphabet_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="A"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="60dp"
-        android:gravity="center"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        />
+        <TextView
+            android:id="@+id/number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="60dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            />
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/name_img"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/apple_icon"
-        android:layout_below="@+id/alphabet_text_layout"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="30dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         >
-     <ImageView
-         android:layout_width="70dp"
-         android:layout_height="70dp"
-         android:background="@drawable/bubble_btn_bg"
-         android:src="@drawable/right_arrow_icon"
-         android:padding="10dp"
-         android:onClick="performPreviousClick"
-         />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bubble_btn_bg"
+            android:src="@drawable/right_arrow_icon"
+            android:padding="10dp"
+            android:onClick="performPreviousClick"
+            />
 
         <ImageView
             android:layout_width="70dp"
@@ -94,5 +85,6 @@
             android:elevation="4dp"
             />
     </RelativeLayout>
+
 
 </RelativeLayout>

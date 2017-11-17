@@ -14,7 +14,7 @@ import com.kids_learning_fun_learning.utility.TypeWriterTextView;
 
 public class LearningScreen extends AppCompatActivity {
 
-    TextView alphabet_txt;
+    TextView alphabet_txt,titleText;
     ImageView name_image;
     TextView typeWriterTextView;
     Animation zoomout,slide_down_animation;
@@ -28,6 +28,9 @@ public class LearningScreen extends AppCompatActivity {
         setContentView(R.layout.activity_learning_screen);
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
+        getSupportActionBar().setTitle("");
+        titleText= (TextView) findViewById(R.id.toolbar_title_text);
+        titleText.setText("Alphabet");
 
         alphabet_txt= (TextView) findViewById(R.id.alphabet_text);
         name_image= (ImageView) findViewById(R.id.name_img);
