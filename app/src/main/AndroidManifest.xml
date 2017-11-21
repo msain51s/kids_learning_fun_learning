@@ -28,7 +28,12 @@
         <activity android:name=".ShapeScreen" />
         <activity android:name=".ColorScreen" />
         <activity android:name=".AnimalScreen" />
-        <activity android:name=".FruitScreen"></activity>
+        <activity android:name=".FruitScreen" />
+        <activity android:name=".DaysOfWeekScreen" />
+        <activity android:name=".VegetableScreen" />
+        <activity android:name=".MonthOfYearScreen" />
+        <activity android:name=".SolarSystemScreen" />
+        <activity android:name=".BodyPartScreen"></activity>
     </application>
 
 </manifest>

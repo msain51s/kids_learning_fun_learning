@@ -5,10 +5,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.support.v7.app.AlertDialog;
+import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.kids_learning_fun_learning.R;
 
 /**
  * Created by Administrator on 11/15/2017.
@@ -51,7 +56,7 @@ public class AppRater {
     }
 
     public static void showRateDialog(final Context mContext, final SharedPreferences.Editor editor) {
-        final Dialog dialog = new Dialog(mContext);
+      /*  final Dialog dialog = new Dialog(mContext);
         dialog.setTitle("Rate " + APP_TITLE);
 
         LinearLayout ll = new LinearLayout(mContext);
@@ -96,6 +101,53 @@ public class AppRater {
         ll.addView(b3);
 
         dialog.setContentView(ll);
+        dialog.show();*/
+
+        View promptView= LayoutInflater.from(mContext).inflate(R.layout.rater_dialog_prompt,null);
+        AlertDialog.Builder builder=new AlertDialog.Builder(mContext);
+        builder.setView(promptView);
+        builder.setCancelable(true);
+        TextView title= (TextView) promptView.findViewById(R.id.dialog_title_text);
+        TextView msg=(TextView) promptView.findViewById(R.id.dialog_msg_text);
+        TextView rate=(TextView) promptView.findViewById(R.id.rate_btn);
+        TextView remindMeLater=(TextView) promptView.findViewById(R.id.remind_me_later_btn);
+        TextView noThanks=(TextView) promptView.findViewById(R.id.no_thanks_btn);
+
+        title.setText("App Rating");
+        String msg_text="If you enjoy using <h3>" + APP_TITLE + "</h3> please take a moment to rate it. Thanks for your support!";
+        msg.setText(Html.fromHtml(msg_text));
+        rate.setText("Rate Now");
+        remindMeLater.setText("Remind me later");
+        noThanks.setText("No, thanks");
+
+        final AlertDialog dialog=builder.create();
+
+        rate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mContext.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + APP_PNAME)));
+                dialog.dismiss();
+            }
+        });
+
+        remindMeLater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        noThanks.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (editor != null) {
+                    editor.putBoolean("dontshowagain", true);
+                    editor.commit();
+                }
+                dialog.dismiss();
+            }
+        });
+
         dialog.show();
     }
 }

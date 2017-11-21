@@ -50,11 +50,13 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:orientation="vertical"
+         android:layout_weight="1"
+         android:layout_gravity="center"
          >
         <ImageView
             android:id="@+id/learn_letters_btn"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
             android:layout_centerInParent="true"
             android:text="Learn Alphabets"
             android:textSize="30dp"
@@ -66,6 +68,7 @@
             android:background="@drawable/bubble_btn_bg"
             android:src="@drawable/letters_icon"
             android:onClick="performLearnClick"
+            android:layout_gravity="center_horizontal"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -81,11 +84,13 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:orientation="vertical"
+         android:layout_weight="1"
+         android:layout_gravity="center"
          >
         <ImageView
             android:id="@+id/learn_numbers_btn"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
             android:layout_centerInParent="true"
             android:text="Learn Alphabets"
             android:textSize="30dp"
@@ -97,6 +102,7 @@
             android:background="@drawable/bubble_btn_bg"
             android:src="@drawable/numbers_icon"
             android:onClick="performNumberClick"
+            android:layout_gravity="center_horizontal"
             />
          <TextView
              android:layout_width="wrap_content"
@@ -119,11 +125,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_fruit_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -135,6 +143,7 @@
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/fruits_icon"
                   android:onClick="performFruitClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -151,11 +160,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_vegetable_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -166,7 +177,8 @@
                   android:textColor="#19868f"
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/vegetables_icon"
-                  android:onClick="performColorClick"
+                  android:onClick="performVegetableClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -191,11 +203,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_shapes_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -207,6 +221,7 @@
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/shape_icon"
                   android:onClick="performShapeClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -223,11 +238,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_colors_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -239,6 +256,7 @@
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/colors_icon"
                   android:onClick="performColorClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -263,11 +281,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_weekday_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -278,7 +298,8 @@
                   android:textColor="#19868f"
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/weekdays_icon"
-                  android:onClick="performShapeClick"
+                  android:onClick="performWeekDayClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -295,11 +316,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_month_name_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -310,7 +333,8 @@
                   android:textColor="#19868f"
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/month_icon"
-                  android:onClick="performColorClick"
+                  android:onClick="performMonthClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -334,11 +358,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_solar_system_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -349,7 +375,8 @@
                   android:textColor="#19868f"
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/solar_system_icon"
-                  android:onClick="performShapeClick"
+                  android:onClick="performSolarSystemClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -366,11 +393,13 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:layout_weight="1"
+              android:layout_gravity="center">
               <ImageView
                   android:id="@+id/learn_body_parts_name_btn"
-                  android:layout_width="200dp"
-                  android:layout_height="200dp"
+                  android:layout_width="170dp"
+                  android:layout_height="170dp"
                   android:layout_centerInParent="true"
                   android:text="Learn Alphabets"
                   android:textSize="30dp"
@@ -381,7 +410,8 @@
                   android:textColor="#19868f"
                   android:background="@drawable/bubble_btn_bg"
                   android:src="@drawable/body_parts_icon"
-                  android:onClick="performColorClick"
+                  android:onClick="performBodyPartsClick"
+                  android:layout_gravity="center_horizontal"
                   />
 
               <TextView
@@ -405,11 +435,14 @@
           <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:orientation="vertical"
+              android:visibility="gone"
+              android:layout_weight="1"
+              android:layout_gravity="center">
           <ImageView
               android:id="@+id/learn_animals_btn"
-              android:layout_width="200dp"
-              android:layout_height="200dp"
+              android:layout_width="170dp"
+              android:layout_height="170dp"
               android:layout_centerInParent="true"
               android:text="Learn Alphabets"
               android:textSize="30dp"
@@ -421,6 +454,7 @@
               android:background="@drawable/bubble_btn_bg"
               android:src="@drawable/animal_icon"
               android:onClick="performAnimalClick"
+              android:layout_gravity="center_horizontal"
               />
               <TextView
                   android:layout_width="wrap_content"

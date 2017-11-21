@@ -91,6 +91,7 @@ public void continueAfterAnimation(){
         } else {
             startActivity(intent);
         }
+        finish();
     }
 
     public boolean isAppUpgradeTime()

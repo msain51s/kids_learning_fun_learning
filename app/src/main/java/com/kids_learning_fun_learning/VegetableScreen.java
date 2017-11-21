@@ -11,18 +11,17 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 
-public class FruitScreen extends AppCompatActivity {
-
-    TextView fruitText,titleText;
-    ImageView fruit_image;
+public class VegetableScreen extends AppCompatActivity {
+    TextView vegetableText,titleText;
+    ImageView vegetable_image;
     View imageCard;
-    int fruit_img_arr[];
-    String fruit_name_arr[];
+    int vegetable_img_arr[];
+    String vegetable_name_arr[];
     int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fruit_screen);
+        setContentView(R.layout.activity_vegetable_screen);
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
@@ -30,20 +29,19 @@ public class FruitScreen extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         titleText= (TextView) findViewById(R.id.toolbar_title_text);
-        titleText.setText("Fruits");
+        titleText.setText("Vegetables");
 
-        fruitText= (TextView) findViewById(R.id.fruit_text);
-        fruit_image= (ImageView) findViewById(R.id.fruit_img);
-        imageCard=findViewById(R.id.fruit_img_card);
+        vegetableText= (TextView) findViewById(R.id.vegetable_text);
+        vegetable_image= (ImageView) findViewById(R.id.vegetable_img);
+        imageCard=findViewById(R.id.vegetable_img_card);
 
-        fruit_name_arr=getResources().getStringArray(R.array.fruits_name_arr);
-        fruit_img_arr=new int[]{R.drawable.apple_icon,R.drawable.banana_icon,
-                R.drawable.blueberry_icon,R.drawable.cherry_icon,
-                R.drawable.graps_icon,R.drawable.lemon_icon,
-                R.drawable.mango_icon,R.drawable.orange_icon,
-                R.drawable.pear_icon,R.drawable.peach_icon,
-                R.drawable.papaya,R.drawable.pineapple_icon,
-                R.drawable.strawberry_icon
+        vegetable_name_arr=getResources().getStringArray(R.array.vegetable_name_arr);
+        vegetable_img_arr=new int[]{R.drawable.brinjal_icon,R.drawable.broccoli,
+                R.drawable.cabbage,R.drawable.capcicum_icon,
+                R.drawable.carrot_icon,R.drawable.cauliflower_icon,
+                R.drawable.cucumber_icon,R.drawable.onion_icon,
+                R.drawable.pea_icon,R.drawable.potato_icon,
+                R.drawable.tomato_icon
         };
 
 
@@ -54,33 +52,33 @@ public class FruitScreen extends AppCompatActivity {
             return;
 
         count--;
-        fruitText.setText(fruit_name_arr[count]);
+        vegetableText.setText(vegetable_name_arr[count]);
 
         YoYo.with(Techniques.Wobble)
                 .duration(700)
-                .playOn(fruitText);
+                .playOn(vegetableText);
 
-        fruit_image.setImageResource(fruit_img_arr[count]);
+        vegetable_image.setImageResource(vegetable_img_arr[count]);
 
         YoYo.with(Techniques.Wave) // Tada is a Animation type.<br />
                 .duration(700)
-                .playOn(fruit_image);
+                .playOn(vegetable_image);
     }
 
     public void performNextClick(View view){
-        if(count==12)
+        if(count==10)
             return;
 
         count++;
-        fruitText.setText(fruit_name_arr[count]);
+        vegetableText.setText(vegetable_name_arr[count]);
         YoYo.with(Techniques.Wobble) // Tada is a Animation type.<br />
                 .duration(700)
-                .playOn(fruitText);
+                .playOn(vegetableText);
 
-        fruit_image.setImageResource(fruit_img_arr[count]);
+        vegetable_image.setImageResource(vegetable_img_arr[count]);
         YoYo.with(Techniques.Wave) // Tada is a Animation type.<br />
                 .duration(700)
-                .playOn(fruit_image);
+                .playOn(vegetable_image);
     }
 
 

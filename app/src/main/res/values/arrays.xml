@@ -196,4 +196,77 @@
         <item>STRAWBERRY</item>
     </string-array>
 
+    <string-array name="vegetable_name_arr">
+        <item>BRINJAL</item>
+        <item>BROCCOLI</item>
+        <item>CABBAGE</item>
+        <item>CAPSICUM</item>
+        <item>CARROT</item>
+        <item>CAULIFLOWER</item>
+        <item>CUCUMBER</item>
+        <item>ONION</item>
+        <item>PEA</item>
+        <item>POTATO</item>
+        <item>TOMATO</item>
+    </string-array>
+
+    <string-array name="days_name_arr">
+        <item>SUNDAY</item>
+        <item>MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item>THURSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+    </string-array>
+
+    <string-array name="months_name_arr">
+        <item>JANUARY</item>
+        <item>FEBRUARY</item>
+        <item>MARCH</item>
+        <item>APRIL</item>
+        <item>MAY</item>
+        <item>JUNE</item>
+        <item>JULY</item>
+        <item>AUGUST</item>
+        <item>SEPTEMBER</item>
+        <item>OCTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DECEMBER</item>
+    </string-array>
+
+    <string-array name="solar_system_arr">
+        <item>SUN</item>
+        <item>MERCURY</item>
+        <item>VENUS</item>
+        <item>EARTH</item>
+        <item>MARS</item>
+        <item>JUPITER</item>
+        <item>SATURN</item>
+        <item>URANUS</item>
+        <item>NEPTUNE</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="body_parts_name_arr">
+        <item>HAIR</item>
+        <item>EYE</item>
+        <item>NOSE</item>
+        <item>EAR</item>
+        <item>TOOTH</item>
+        <item>MOUTH</item>
+        <item>NECK</item>
+        <item>CHEST</item>
+        <item>ARM</item>
+        <item>ELBOW</item>
+        <item>STOMACH</item>
+        <item>HAND</item>
+        <item>FINGER</item>
+        <item>KNEE</item>
+        <item>LEG</item>
+        <item>TOE</item>
+        <item>FOOT</item>
+
+    </string-array>
+
 </resources>
