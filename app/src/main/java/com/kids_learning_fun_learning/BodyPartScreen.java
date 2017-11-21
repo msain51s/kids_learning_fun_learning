@@ -1,5 +1,7 @@
 package com.kids_learning_fun_learning;
 
+import android.media.AudioManager;
+import android.os.Build;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 
+import java.util.HashMap;
 import java.util.Locale;
 
 public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.OnInitListener{
@@ -61,7 +64,19 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
 
     private void speakOut(String text) {
 
-        tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        //    Log.v(TAG, "Speak new API");
+            Bundle bundle = new Bundle();
+            bundle.putInt(TextToSpeech.Engine.KEY_PARAM_STREAM, AudioManager.STREAM_MUSIC);
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, bundle, null);
+        } else {
+       //     Log.v(TAG, "Speak old API");
+            HashMap<String, String> param = new HashMap<>();
+            param.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, param);
+        }
+
+  //      tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
 
     @Override
