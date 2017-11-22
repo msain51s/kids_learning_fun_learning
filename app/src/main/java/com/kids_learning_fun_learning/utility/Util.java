@@ -83,7 +83,7 @@ public class Util {
             @Override
             public void onClick(SweetAlertDialog sDialog) {
                 sDialog.dismissWithAnimation();
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.musa.intellicataloge"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.kids_learning_fun_learning"));
                 ctx.startActivity(intent);
             }
         })

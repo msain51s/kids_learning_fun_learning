@@ -73,7 +73,7 @@ public void continueAfterAnimation(){
     public void checkForUpdates(){
         if(isAppUpgradeTime()) {
             if (Util.ChechInternetAvalebleOrNot(this)) {
-                new getAppMarketVersionAsync().execute("https://play.google.com/store/apps/details?id=com.musa.intellicataloge");
+                new getAppMarketVersionAsync().execute("https://play.google.com/store/apps/details?id=com.kids_learning_fun_learning");
             }
         }
         else {
