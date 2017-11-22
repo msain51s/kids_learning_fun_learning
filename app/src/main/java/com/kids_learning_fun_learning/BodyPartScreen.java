@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.kids_learning_fun_learning.utility.Util;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -25,7 +26,8 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
     int count;
 
     private TextToSpeech tts;
-    private TextView btnSpeak;
+    ImageView speakerBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,7 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         titleText= (TextView) findViewById(R.id.toolbar_title_text);
         titleText.setText("Body Parts");
+        speakerBtn= (ImageView) findViewById(R.id.speaker_icon);
         tts = new TextToSpeech(this, this);
 
         body_part_name_arr=getResources().getStringArray(R.array.body_parts_name_arr);
@@ -49,7 +52,7 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
 
         count--;
   //      solarPlanetText.setText(solarPlanet_name_arr[count]);
-        speakOut(body_part_name_arr[count]);
+        Util.speakOut(tts,body_part_name_arr[count]);
     }
 
     public void performNextClick(View view){
@@ -58,26 +61,14 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
 
         count++;
     //    solarPlanetText.setText(solarPlanet_name_arr[count]);
-        speakOut(body_part_name_arr[count]);
+        Util.speakOut(tts,body_part_name_arr[count]);
+    }
+
+    public void performSpeakerClick(View view){
+        Util.speakOut(tts,body_part_name_arr[count]);
     }
 
 
-    private void speakOut(String text) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-        //    Log.v(TAG, "Speak new API");
-            Bundle bundle = new Bundle();
-            bundle.putInt(TextToSpeech.Engine.KEY_PARAM_STREAM, AudioManager.STREAM_MUSIC);
-            tts.speak(text, TextToSpeech.QUEUE_FLUSH, bundle, null);
-        } else {
-       //     Log.v(TAG, "Speak old API");
-            HashMap<String, String> param = new HashMap<>();
-            param.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
-            tts.speak(text, TextToSpeech.QUEUE_FLUSH, param);
-        }
-
-  //      tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-    }
 
     @Override
     public void onInit(int status) {
@@ -89,8 +80,8 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
                     || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "This Language is not supported");
             } else {
-          //      btnSpeak.setEnabled(true);
-                speakOut(body_part_name_arr[count]);
+                speakerBtn.setEnabled(true);
+                Util.speakOut(tts,body_part_name_arr[count]);
 
                 Log.e("TTS", "Speech done");
             }

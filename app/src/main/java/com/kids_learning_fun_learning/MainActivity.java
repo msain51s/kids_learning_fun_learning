@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         bodyPartView= (ImageView) findViewById(R.id.learn_body_parts_name_btn);
 
 
-        YoYo.with(Techniques.ZoomIn) // Tada is a Animation type.<br />
+       /* YoYo.with(Techniques.ZoomIn) // Tada is a Animation type.<br />
                 .duration(500)
                 .playOn(learn_alphabet);
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         YoYo.with(Techniques.ZoomIn) // Tada is a Animation type.<br />
                 .duration(500)
                 .delay(4500)
-                .playOn(bodyPartView);
+                .playOn(bodyPartView);*/
 
       /*  String text="Learn"+"\n"+"Alphabets";
         learn_alphabet.setText(text);*/

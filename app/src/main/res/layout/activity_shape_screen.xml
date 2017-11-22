@@ -46,8 +46,11 @@
     app:cardCornerRadius="5dp"
     app:cardElevation="4dp"
     app:cardBackgroundColor="@color/white"
-    android:layout_margin="10dp"
-    android:layout_centerInParent="true">
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_below="@+id/shape_text">
 
     <RelativeLayout
         android:id="@+id/number_text_layout"
@@ -58,8 +61,8 @@
 
         <ImageView
             android:id="@+id/shape_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_centerHorizontal="true"
             android:src="@drawable/circle_shape"
             android:layout_centerInParent="true"
@@ -78,6 +81,21 @@
             android:src="@drawable/right_arrow_icon"
             android:padding="10dp"
             android:onClick="performPreviousClick"
+            />
+
+        <ImageView
+            android:id="@+id/speaker_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bubble_btn_bg"
+            android:src="@drawable/speaker_icon"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:onClick="performSpeakerClick"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
             />
 
         <ImageView

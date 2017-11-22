@@ -75,6 +75,21 @@
             />
 
         <ImageView
+            android:id="@+id/speaker_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bubble_btn_bg"
+            android:src="@drawable/speaker_icon"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:onClick="performSpeakerClick"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
+            />
+
+        <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/bubble_btn_bg"

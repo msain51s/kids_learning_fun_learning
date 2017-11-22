@@ -5,9 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.media.AudioManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 
 import com.kids_learning_fun_learning.R;
 import com.kids_learning_fun_learning.SplashScreen;
@@ -24,6 +28,7 @@ import java.net.URLConnection;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
@@ -131,6 +136,26 @@ public class Util {
             e.printStackTrace();
         }
         return null;
+    }
+
+
+  /*SPEAK OUT FUNCTION*/
+
+    public static void speakOut(TextToSpeech tts,String text) {
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            //    Log.v(TAG, "Speak new API");
+            Bundle bundle = new Bundle();
+            bundle.putInt(TextToSpeech.Engine.KEY_PARAM_STREAM, AudioManager.STREAM_MUSIC);
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, bundle, null);
+        } else {
+            //     Log.v(TAG, "Speak old API");
+            HashMap<String, String> param = new HashMap<>();
+            param.put(TextToSpeech.Engine.KEY_PARAM_STREAM, String.valueOf(AudioManager.STREAM_MUSIC));
+            tts.speak(text, TextToSpeech.QUEUE_FLUSH, param);
+        }
+
+        //      tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
 
 }
