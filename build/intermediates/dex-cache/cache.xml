@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/ff3a19bc03355e118b39532b77b7840b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5ad3911825107d8dd4b017fdecebfd23c08048dd">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/materialish-progress-1.0.aar/04d917906e3d16701ce0cec4b650fa49/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="57487745ce450899f9f250d5ae5c092a682cd041">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.0/db09a97f4f0db8892c1a0111a4b966f97920d082/support-annotations-26.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="db09a97f4f0db8892c1a0111a4b966f97920d082">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.8.0.aar/6544922928a26f6b9b7aa44d42bd8e44/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="aeca0a0ab86831ec59a54723205ce9341ac22d1b">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/libs/htmlcleaner-2.16.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="12a5b6a32dab31dc71053d1ed3959ee379ffb120">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/library-1.0.1.aar/b56552f3141bee5c34a3f57eeac6ce34/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0.aar/3276371c53bc10beeb52392bb9d5aa82/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8602ab07133e6ee182726fa27588420dba9d6d55">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0.aar/f983b2fdb9819a2a4a0e923749b5cf77/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2520dd452fb1f487eba29ccd2d44358f0b8da788">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.8.0.aar/bd1f17db8cbe65c9f8d30a498345ac1b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a7760a45a6c9f425aaa43ef391a8cf28a8bcb4a1">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0.aar/e2e396eb3ab8ec063e740a8e2942c25a/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0.aar/28f2a974afd3a79144eac8f3794bc15c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f7b86f1beb2b3625c6a1a5da6b5fc5294b64aea9">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0.aar/43c401cdf5e578ae02eebd0e1c0ea3f0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1a94a06ec585c9423a3c03bde1f7bf9268f83d66">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0.aar/77120434b00044080fb6c7121822b935/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a8655e6077da9526c0c94bf063f1275430ce8574">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/library-1.3.aar/86c214792cfca60dbbf35afa913a7afc/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0c3529d9491be892952749d252ae1defa9b1f937">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0.aar/8829cc379286643f196c113dc0031a21/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cbb26a4f659b17abc1f75ff735a607aa299697ac">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0.aar/f52e2d2e27d187565ee9766adf8907af/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="db0171d21d064bab7ad72685f3c7df40544b03a8">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0.aar/0836cc89c5cec9b33ef270b07bb61900/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6fdbd1bd6503815f2cef20a9a137005e5953aad1">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/1e68d54ca115e7e62354cce4fea0b425/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.8.0.aar/dab8d0fbe96bd5acdad829135ca52306/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="24cb9bae5fbe94df0f55d87452a291b69a2f22bf">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/library-1.1.3.aar/71e45518252fc857cb49a0e72402d485/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mamtakumari/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0.aar/e1334a695b4236eccfda168831c6b43c/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b102f892442929c3457de1ef6a94f5dda3dd8864">
+        <dex dex="/Users/mamtakumari/Documents/my apps/KidsLearningFunLearning/app/build/intermediates/transforms/preDex/release/18.jar" />
+    </item>
+
+</items>

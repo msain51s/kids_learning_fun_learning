@@ -30,6 +30,7 @@ public class SolarSystemScreen extends AppCompatActivity implements TextToSpeech
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solar_system_screen);
+        Util.setupInerstitialAd(this);
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);

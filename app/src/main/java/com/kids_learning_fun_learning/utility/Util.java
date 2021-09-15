@@ -13,6 +13,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.kids_learning_fun_learning.R;
 import com.kids_learning_fun_learning.SplashScreen;
 
@@ -156,6 +159,27 @@ public class Util {
         }
 
         //      tts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+    }
+
+    public static void setupInerstitialAd(Context context){
+        final InterstitialAd mInterstitialAd = new InterstitialAd(context);
+
+        // set the ad unit ID
+        mInterstitialAd.setAdUnitId(context.getString(R.string.interstitial_full_screen));
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+
+        // Load ads into Interstitial Ads
+        mInterstitialAd.loadAd(adRequest);
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                }
+            }
+        });
     }
 
 }

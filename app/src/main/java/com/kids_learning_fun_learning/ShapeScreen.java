@@ -32,6 +32,8 @@ public class ShapeScreen extends AppCompatActivity implements TextToSpeech.OnIni
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shape_screen);
+        Util.setupInerstitialAd(this);
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("");

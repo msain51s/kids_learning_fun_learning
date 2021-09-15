@@ -71,14 +71,16 @@ public void continueAfterAnimation(){
     }
 
     public void checkForUpdates(){
-        if(isAppUpgradeTime()) {
+        /*if(isAppUpgradeTime()) {
             if (Util.ChechInternetAvalebleOrNot(this)) {
                 new getAppMarketVersionAsync().execute("https://play.google.com/store/apps/details?id=com.kids_learning_fun_learning");
-            }
+            }else{*/
+             //   navigateToHome();
+          /*  }
         }
-        else {
+        else {*/
             navigateToHome();
-        }
+     //   }
     }
 
     public void navigateToHome(){
@@ -134,30 +136,29 @@ public void continueAfterAnimation(){
         @Override
         protected void onPostExecute(String version) {
             super.onPostExecute(version);
+          try {
+              String market_version = version;
+              String app_version = Util.getAppVersionCode(SplashScreen.this);
+              if (market_version == null) {
+                  navigateToHome();
+                  return;
+              }
+              DecimalFormat df = new DecimalFormat("#.#");
+              boolean upgradeFlag = false;
+              double market_version_value = Double.parseDouble(market_version);
+              double app_version_value = Double.parseDouble(app_version);
 
-            String market_version=version;
-            String app_version=Util.getAppVersionCode(SplashScreen.this);
-            if(market_version==null){
-                navigateToHome();
-                return;
-            }
-            DecimalFormat df = new DecimalFormat("#.#");
-            boolean upgradeFlag=false;
-            double market_version_value=Double.parseDouble(market_version);
-            double app_version_value=Double.parseDouble(app_version);
+              if (market_version.equalsIgnoreCase(app_version)) {
+                  upgradeFlag = false;
 
-            if(market_version.equalsIgnoreCase(app_version))
-            {
-                upgradeFlag=false;
-
-                navigateToHome();
-            }
-            else if(app_version_value<market_version_value)
-            {
-                upgradeFlag=true;
-                Util.showAppUpgradeDialog(SplashScreen.this,"Application Update is available ",upgradeFlag);
-            }
-
+                  navigateToHome();
+              } else if (app_version_value < market_version_value) {
+                  upgradeFlag = true;
+                  Util.showAppUpgradeDialog(SplashScreen.this, "Application Update is available ", upgradeFlag);
+              }
+          }catch (Exception e){
+              navigateToHome();
+          }
         }
     }
 }

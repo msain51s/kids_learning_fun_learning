@@ -42,6 +42,8 @@ public class DaysOfWeekScreen extends AppCompatActivity implements TextToSpeech.
         day_name_arr=getResources().getStringArray(R.array.days_name_arr);
 
         tts=new TextToSpeech(this,this);
+
+        Util.setupInerstitialAd(this);
     }
 
     public void performPreviousClick(View view){

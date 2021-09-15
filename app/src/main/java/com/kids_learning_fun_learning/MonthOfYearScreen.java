@@ -28,6 +28,8 @@ public class MonthOfYearScreen extends AppCompatActivity implements TextToSpeech
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_month_of_year_screen);
 
+        Util.setupInerstitialAd(this);
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("");

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Kids Learning Fun Learning</string>
+
+
+    <!-- AdMob ad unit IDs -->
+    <string name="admob_app_id">ca-app-pub-2170161318817386~5264224491</string>
+    <string name="banner_home_footer">ca-app-pub-2170161318817386/6032604589</string>
+    <string name="interstitial_full_screen">ca-app-pub-2170161318817386/4336379534</string>
 </resources>

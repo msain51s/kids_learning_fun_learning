@@ -12,12 +12,16 @@ import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.kids_learning_fun_learning.utility.Util;
 
 import java.util.Locale;
 
 public class FruitScreen extends AppCompatActivity implements TextToSpeech.OnInitListener{
-
+    InterstitialAd mAdMobInterstitialAd;
+    AdRequest adRequest;
     TextView fruitText,titleText;
     ImageView fruit_image;
     View imageCard;
@@ -31,6 +35,8 @@ public class FruitScreen extends AppCompatActivity implements TextToSpeech.OnIni
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fruit_screen);
+
+        Util.setupInerstitialAd(this);
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
@@ -56,6 +62,17 @@ public class FruitScreen extends AppCompatActivity implements TextToSpeech.OnIni
         };
 
      tts=new TextToSpeech(this,this);
+
+
+    }
+
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        mAdMobInterstitialAd.loadAd(adRequest);
     }
 
     public void performPreviousClick(View view){

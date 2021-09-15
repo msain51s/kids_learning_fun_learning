@@ -44,6 +44,8 @@ public class BodyPartScreen extends AppCompatActivity implements TextToSpeech.On
         tts = new TextToSpeech(this, this);
 
         body_part_name_arr=getResources().getStringArray(R.array.body_parts_name_arr);
+
+        Util.setupInerstitialAd(this);
     }
 
     public void performPreviousClick(View view){

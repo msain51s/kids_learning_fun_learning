@@ -11,9 +11,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.view.animation.AnimationUtils;
 import android.view.animation.Animation;
+import android.widget.Toast;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 import com.kids_learning_fun_learning.utility.AppRater;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,10 +28,14 @@ public class MainActivity extends AppCompatActivity {
                dayView,monthView,solarSystemView,bodyPartView;
     TextView titleText;
     Animation pulse_animation,zoomOutAnimation;
+
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setupBannerAd();
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
@@ -114,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
         AppRater.app_launched(this);
 
+
     }
 
     public void performLearnClick(View view){
@@ -170,4 +180,70 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,BodyPartScreen.class);
         startActivity(intent);
     }
-}
+
+
+    public void setupBannerAd(){
+        mAdView =  findViewById(R.id.adView);
+
+        AdRequest adRequest = new AdRequest.Builder()
+               // .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                // Check the LogCat to get your test device ID
+               // .addTestDevice("C04B1BFFB0774708339BC273F8A43708")
+                .build();
+
+
+
+        mAdView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+            }
+
+            @Override
+            public void onAdClosed() {
+              //  Toast.makeText(getApplicationContext(), "Ad is closed!", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+              //  Toast.makeText(getApplicationContext(), "Ad failed to load! error code: " + errorCode, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+              //  Toast.makeText(getApplicationContext(), "Ad left application!", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAdOpened() {
+                super.onAdOpened();
+            }
+        });
+
+        mAdView.loadAd(adRequest);
+    }
+
+    @Override
+    public void onPause() {
+        if (mAdView != null) {
+            mAdView.pause();
+        }
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mAdView != null) {
+            mAdView.resume();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
+        super.onDestroy();
+    }
+    }
+

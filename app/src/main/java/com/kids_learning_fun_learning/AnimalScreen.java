@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.kids_learning_fun_learning.utility.Util;
 
 public class AnimalScreen extends AppCompatActivity {
 
@@ -41,6 +42,7 @@ public class AnimalScreen extends AppCompatActivity {
         };
 
 
+        Util.setupInerstitialAd(this);
     }
 
     public void performPreviousClick(View view){

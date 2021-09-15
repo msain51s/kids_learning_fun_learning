@@ -51,6 +51,7 @@ public class ColorScreen extends AppCompatActivity implements TextToSpeech.OnIni
                             R.color.purple,R.color.magenta};
 
         tts=new TextToSpeech(this,this);
+        Util.setupInerstitialAd(this);
     }
 
     public void performPreviousClick(View view){

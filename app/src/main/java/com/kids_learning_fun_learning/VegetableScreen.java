@@ -31,6 +31,8 @@ public class VegetableScreen extends AppCompatActivity implements TextToSpeech.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegetable_screen);
 
+        Util.setupInerstitialAd(this);
+
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("");
